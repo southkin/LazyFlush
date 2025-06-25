@@ -3,7 +3,7 @@
 import Combine
 import Foundation
 
-extension Publisher {
+public extension Publisher {
     func buffer<S: Scheduler>(
         silence: S.SchedulerTimeType.Stride,
         maxBurst: S.SchedulerTimeType.Stride = .zero,
